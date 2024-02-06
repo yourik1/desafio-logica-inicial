@@ -1,15 +1,7 @@
-let vitorias = 70;
-let derrotas = 9;
+function somar(vitorias, derrotas){
+    let saldoVitorias = vitorias - derrotas;
 
-function sum(vitorias, derrotas){
-    return vitorias - derrotas;
-}
-
-
-function saldoRankeds() {
-    let saldoVitorias = sum(vitorias, derrotas);
-    nivel = "";
-
+    let nivel;
 
     if(saldoVitorias <= 10) {
         nivel = "Ferro";
@@ -27,9 +19,14 @@ function saldoRankeds() {
         nivel = "Imortal";
     }
 
-    console.log(`O herói tem de saldo de vitórias ${saldoVitorias} está no nível de ${nivel}`)
+    console.log(`O herói tem de saldo de vitórias ${saldoVitorias} e está no nível de ${nivel}.`)
 }
 
+somar(60, 9);
 
-saldoRankeds();
+
+
+
+
+
 
