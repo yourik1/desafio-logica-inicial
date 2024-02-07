@@ -8,7 +8,7 @@ const limiteLendario = 100;
 
 // Função que calcula o saldo de vitórias
 function calcularSaldoVitorias(vitorias, derrotas) {
-    return saldoVitorias = vitorias - derrotas;   
+    return vitorias - derrotas;   
 }
 
 // Função para ranquear o herói com base no saldo de vitórias
@@ -17,6 +17,7 @@ function Rankear(){
 
     let nivel;
 
+    // Determina o nível com base no saldo de vitórias
     if (saldoVitorias <= limiteFerro) {
         nivel = "Ferro";
     } else if (saldoVitorias <= limiteBronze) {
