@@ -1,32 +1,38 @@
-function somar(vitorias, derrotas){
-    let saldoVitorias = vitorias - derrotas;
+const limiteFerro = 10;
+const limiteBronze = 20;
+const limitePrata = 50;
+const limiteOuro = 80;
+const limiteDiamante = 90;
+const limiteLendario = 100;
+
+
+function calcularSaldoVitorias(vitorias, derrotas) {
+    return saldoVitorias = vitorias - derrotas;
+    
+}
+
+function Rankear(){
+    let saldoVitorias = calcularSaldoVitorias(70, 9);
 
     let nivel;
 
-    if(saldoVitorias <= 10) {
+    if (saldoVitorias <= limiteFerro) {
         nivel = "Ferro";
-    }else if(saldoVitorias > 10 && saldoVitorias <= 20) {
+    } else if (saldoVitorias <= limiteBronze) {
         nivel = "Bronze";
-    }else if(saldoVitorias > 20 && saldoVitorias <= 50) {
+    } else if (saldoVitorias <= limitePrata) {
         nivel = "Prata";
-    }else if(saldoVitorias > 50 && saldoVitorias <= 80) {
+    } else if (saldoVitorias <= limiteOuro) {
         nivel = "Ouro";
-    }else if(saldoVitorias > 80 && saldoVitorias <= 90) {
+    } else if (saldoVitorias <= limiteDiamante) {
         nivel = "Diamante";
-    }else if(saldoVitorias > 90 && saldoVitorias <= 100) {
+    } else if (saldoVitorias <= limiteLendario) {
         nivel = "Lendário";
-    }else {
+    } else {
         nivel = "Imortal";
     }
 
     console.log(`O herói tem de saldo de vitórias ${saldoVitorias} e está no nível de ${nivel}.`)
 }
 
-somar(60, 9);
-
-
-
-
-
-
-
+Rankear();
