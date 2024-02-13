@@ -5,23 +5,23 @@ class hero{
         this.type = type;
     }
 
-    attack(){
+    attacking(){
         
-        let ataque;
+        let attack;
         
         if(this.type == "mage"){
-            ataque = "magia";
+            attack = "magia";
         }else if(this.type == "warrior"){
-            ataque = "espada";
+            attack = "espada";
         }else if(this.type == "monk"){
-            ataque = "artes marciais";
+            attack = "artes marciais";
         }else if(this.type == "ninja"){
-            ataque = "shuriken";
+            attack = "shuriken";
         }
 
-        console.log(`O ${this.type} atacou usando ${ataque}.`)
+        console.log(`O ${this.type} atacou usando ${attack}.`)
     }
 }
 
 let warrior = new hero("Jade", 17, "warrior");
-warrior.attack();
+warrior.attacking();
