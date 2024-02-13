@@ -153,3 +153,5 @@
 //     // Calcula e imprime o dano causado pelo item personalizado em um combate simulado
 //     const danoTotal = itemPersonalizado.calcularDano();
 //     print("Dano em combate: " + danoTotal);
+
+// TESTANDO PARA VER SE IGNOROU O ARQUIVO
